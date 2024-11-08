@@ -1,0 +1,44 @@
+.watan{
+  position: relative;
+
+  .main-illustration{
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  .watan-content{
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+
+    .watan-title{
+      margin-bottom: 30px;
+      color: #fff;
+      font-size: 48px;
+      font-weight: 100;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (max-width: 560px){
+      .watan-title{
+        font-size: 32px;
+      }
+    }
+
+    @media (max-width: 375px){
+      .watan-title{
+        font-size: 28px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
